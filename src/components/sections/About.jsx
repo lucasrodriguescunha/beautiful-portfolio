@@ -23,6 +23,32 @@ export const About = () => {
         "Flyway"
     ];
 
+    const devOpsSkills = [
+        "AWS",
+        "Docker",
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Jenkins"
+    ];
+
+    const sgbdsSkills = [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB"
+    ];
+
+    const testsSkills = [
+        "Jest",
+        "JUnit",
+        "Jasmine/Karma"
+    ];
+
+    const messagingsSkills = [
+        "RabbitMQ",
+        "Apache Kafka"
+    ];
+
     return (
         <section
             id="about"
@@ -69,6 +95,62 @@ export const About = () => {
                                     ))}
                                 </div>
                             </div>
+
+                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                                <h3 className="text-xl font-bold mb-4"> DevOps </h3>
+                                <div className="flex flex-wrap gap-2"
+                                >
+                                    {devOpsSkills.map((tech, key) => (
+                                        <span key={key} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
+                                        hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition"
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                                <h3 className="text-xl font-bold mb-4"> SGBDs </h3>
+                                <div className="flex flex-wrap gap-2"
+                                >
+                                    {sgbdsSkills.map((tech, key) => (
+                                        <span key={key} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
+                                        hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition"
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                                <h3 className="text-xl font-bold mb-4"> Unit Tests </h3>
+                                <div className="flex flex-wrap gap-2"
+                                >
+                                    {testsSkills.map((tech, key) => (
+                                        <span key={key} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
+                                        hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition"
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                                <h3 className="text-xl font-bold mb-4"> Messaging </h3>
+                                <div className="flex flex-wrap gap-2"
+                                >
+                                    {messagingsSkills.map((tech, key) => (
+                                        <span key={key} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
+                                        hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition"
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -81,7 +163,7 @@ export const About = () => {
                                     (2023-2027)
                                 </li>
                                 <li>
-                                    Relevant Coursework: Data Structures, Web Development, Cloud Computing...
+                                    Relevant Courses: Data Structures, Algorithms and programming techniques, Web Development, Master Clean and Hexagonal Architecture...
                                 </li>
                             </ul>
                         </div>
@@ -91,15 +173,15 @@ export const About = () => {
                             <div className="space-y-4 text-gray-300">
                                 <div>
                                     <h4 className="font-semibold">
-                                        Software Engineer at ABC Corp
-                                        (2020- Present)
+                                        Full-stack Trainee Developer at PMU
+                                        (2024- Present)
                                     </h4>
                                     <p>
-                                        Developed and maintained microservices for cloud-based applications.
+                                        Responsible for front-end development and the creation and integration of REST APIs.
                                     </p>
                                 </div>
 
-                                <div>
+                                {/* <div>
                                     <h4 className="font-semibold">
                                         Intern at DEF Startups
                                         (2019)
@@ -107,7 +189,7 @@ export const About = () => {
                                     <p>
                                         Assisted in building front-end components and integration REST APIs.
                                     </p>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

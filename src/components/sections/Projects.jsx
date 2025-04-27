@@ -15,13 +15,12 @@ export const Projects = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.1)] transition-all">
-                            <h3 className="text-xl font-bold mb-2"> Cloud Platform </h3>
+                            <h3 className="text-xl font-bold mb-2"> Gerenciador de Documentos </h3>
                             <p className="text-gray-400 mb-4">
-                                Scalable cloud infrastructure managment with real-time monitoring
-                                and automated scaling.
+                                The objective of this project is to develop document management and control software to optimize the work of the General Archives department of the Municipal Government of Ubá (PMU).
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {["React", "Node.js", "AWS", "Docker"].map((tech, key) => (
+                                {["Kotlin", "Spring", "React.js", "PostgreSQL", "Flyway", "GitLab", "Gradle", "Prime React", "JUnit", "Kotest"].map((tech, key) => (
                                     <span key={key} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
                                 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition"
                                     >
@@ -41,6 +40,32 @@ export const Projects = () => {
                         </div>
 
                         <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.1)] transition-all">
+                            <h3 className="text-xl font-bold mb-2"> QualiAI </h3>
+                            <p className="text-gray-400 mb-4">
+                                QualiAI is a system under development aimed at automated visual inspection, using computer vision and machine learning technologies.
+                            </p>
+                            <div className="flex flex-wrap gap-2 mb-4">
+                                {["Python", "Tensorflow", "Keras", "NumPy", "Matplotlib", "Flask", "MongoDB"].map((tech, key) => (
+                                    <span key={key} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
+                                hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition"
+                                    >
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+
+                            <div className="flex justify-between items-center">
+                                <a
+                                    href="https://github.com/lucasrodriguescunha/QualiAI"
+                                    target="_blank"
+                                    className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                                >
+                                    View Project &#8594;
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.1)] transition-all">
                             <h3 className="text-xl font-bold mb-2"> Cloud Platform </h3>
                             <p className="text-gray-400 mb-4">
                                 Scalable cloud infrastructure managment with real-time monitoring
@@ -64,9 +89,9 @@ export const Projects = () => {
                                     View Project &#8594;
                                 </a>
                             </div>
-                        </div>
+                        </div> */}
 
-                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.1)] transition-all">
+                        {/* <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.1)] transition-all">
                             <h3 className="text-xl font-bold mb-2"> Cloud Platform </h3>
                             <p className="text-gray-400 mb-4">
                                 Scalable cloud infrastructure managment with real-time monitoring
@@ -90,33 +115,7 @@ export const Projects = () => {
                                     View Project &#8594;
                                 </a>
                             </div>
-                        </div>
-
-                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.1)] transition-all">
-                            <h3 className="text-xl font-bold mb-2"> Cloud Platform </h3>
-                            <p className="text-gray-400 mb-4">
-                                Scalable cloud infrastructure managment with real-time monitoring
-                                and automated scaling.
-                            </p>
-                            <div className="flex flex-wrap gap-2 mb-4">
-                                {["React", "Node.js", "AWS", "Docker"].map((tech, key) => (
-                                    <span key={key} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
-                                hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition"
-                                    >
-                                        {tech}
-                                    </span>
-                                ))}
-                            </div>
-
-                            <div className="flex justify-between items-center">
-                                <a
-                                    href="#"
-                                    className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                                >
-                                    View Project &#8594;
-                                </a>
-                            </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </RevealOnScroll>
