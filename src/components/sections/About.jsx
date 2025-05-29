@@ -17,6 +17,7 @@ export const About = () => {
     ];
 
     const backendSkills = [
+        "Python",
         "Java",
         "Kotlin",
         "Spring",

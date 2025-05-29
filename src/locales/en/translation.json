@@ -1,0 +1,19 @@
+{
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "passion": "Passionate developer with expertise in building scalable web applications and creating innovate solutions.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "devops": "DevOps",
+    "sgbds": "SGBDs",
+    "tests": "Unit Tests",
+    "messaging": "Messaging",
+    "education": "Education",
+    "work_experience": "Work Experience",
+    "get_in_touch": "Get In Touch",
+    "name_placeholder": "Name...",
+    "email_placeholder": "example@gmail.com",
+    "message_placeholder": "Your Message..."
+}

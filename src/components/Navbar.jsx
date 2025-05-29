@@ -1,6 +1,13 @@
-import { useEffect } from "react"
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { FaFlagUsa, FaFlag } from 'react-icons/fa';
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
 
     useEffect(() => {
         document.body.style.overflow = menuOpen ? "hidden" : "";
@@ -11,7 +18,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             <div className="max-w-5xl mx-auto px-4">
                 <div className="flex justify-between items-center h-16">
                     <a href="#home" className="font-mono text-xl font-bold text-white">
-                        lucas<span className="text-blue-500">.tech</span>
+                        🧑‍💻<span className="text-blue-500">.dev</span>
                     </a>
 
                     <div
@@ -24,34 +31,53 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                     <div className="hidden md:flex items-center space-x-8">
                         <a
                             href="#home"
-                            className="text-gray-300 hove:text-white transition-colors"
+                            className="text-gray-300 hover:text-white transition-colors"
                         >
-                            Home
+                            {t('home')}
                         </a>
 
                         <a
                             href="#about"
-                            className="text-gray-300 hove:text-white transition-colors"
+                            className="text-gray-300 hover:text-white transition-colors"
                         >
                             About
                         </a>
 
                         <a
                             href="#projects"
-                            className="text-gray-300 hove:text-white transition-colors"
+                            className="text-gray-300 hover:text-white transition-colors"
                         >
                             Projects
                         </a>
 
                         <a
                             href="#contact"
-                            className="text-gray-300 hove:text-white transition-colors"
+                            className="text-gray-300 hover:text-white transition-colors"
                         >
                             Contact
                         </a>
+
+                        {/* Botões de troca de idioma */}
+                        <div className="flex gap-2">
+                            <button
+                                onClick={() => changeLanguage('en')}
+                                className="text-gray-300 hover:text-white transition-colors cursor-pointer"
+                            >
+                                EN
+                            </button>
+
+                            <span>|</span>
+
+                            <button
+                                onClick={() => changeLanguage('pt')}
+                                className="text-gray-300 hover:text-white transition-colors cursor-pointer"
+                            >
+                                BR
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
-    )
-}
+    );
+};

@@ -1,0 +1,19 @@
+{
+    "home": "Início",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "passion": "Desenvolvedor apaixonado, com experiência na construção de aplicações web escaláveis e soluções inovadoras.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "devops": "DevOps",
+    "sgbds": "SGBDs",
+    "tests": "Testes Unitários",
+    "messaging": "Mensageria",
+    "education": "Educação",
+    "work_experience": "Experiência Profissional",
+    "get_in_touch": "Entre em Contato",
+    "name_placeholder": "Nome...",
+    "email_placeholder": "exemplo@gmail.com",
+    "message_placeholder": "Sua Mensagem..."
+}
