@@ -1,6 +1,8 @@
-import { RevealOnScroll } from "../RevealOnScroll"
+import { RevealOnScroll } from "../RevealOnScroll";
+import { useTranslation } from "react-i18next";
 
 export const About = () => {
+    const { t } = useTranslation();
 
     const frontendSkills = [
         "HTML",
@@ -59,13 +61,12 @@ export const About = () => {
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center"
                     >
-                        About Me
+                        {t('about_me')}
                     </h2>
 
                     <div className="rounded-xl p-8 border-white/10 border hover:-translate-y transition-all">
                         <p className="text-gray-300 mb-6">
-                            Passionate developer with expertise in building scalable web
-                            applications and creating innovate solutions.
+                            {t('passion')}
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

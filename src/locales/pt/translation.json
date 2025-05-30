@@ -3,6 +3,9 @@
     "about": "Sobre",
     "projects": "Projetos",
     "contact": "Contato",
+    "name": "Olá, meu nome é Lucas",
+    "presentation": "Sou um desenvolvedor full-stack que adora criar aplicações web limpas e escaláveis. Meu objetivo é criar soluções que ofereçam desempenho excepcional e uma experiência agradável ao usuário.",
+    "about_me": "Sobre mim",
     "passion": "Desenvolvedor apaixonado, com experiência na construção de aplicações web escaláveis e soluções inovadoras.",
     "frontend": "Frontend",
     "backend": "Backend",
@@ -15,5 +18,7 @@
     "get_in_touch": "Entre em Contato",
     "name_placeholder": "Nome...",
     "email_placeholder": "exemplo@gmail.com",
-    "message_placeholder": "Sua Mensagem..."
+    "message_placeholder": "Sua Mensagem...",
+    "view_projects": "Ver projetos",
+    "contact_me": "Fale comigo"
 }

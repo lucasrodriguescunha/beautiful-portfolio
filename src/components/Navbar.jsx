@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { FaFlagUsa, FaFlag } from 'react-icons/fa';
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
     const { t, i18n } = useTranslation();
 
-    const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng);
+    const toggleLanguage = () => {
+        const newLang = i18n.language === 'en' ? 'pt' : 'en';
+        i18n.changeLanguage(newLang);
     };
 
     useEffect(() => {
@@ -40,41 +40,38 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                             href="#about"
                             className="text-gray-300 hover:text-white transition-colors"
                         >
-                            About
+                            {t('about')}
                         </a>
 
                         <a
                             href="#projects"
                             className="text-gray-300 hover:text-white transition-colors"
                         >
-                            Projects
+                            {t('projects')}
                         </a>
 
                         <a
                             href="#contact"
                             className="text-gray-300 hover:text-white transition-colors"
                         >
-                            Contact
+                            {t('contact')}
                         </a>
 
-                        {/* Botões de troca de idioma */}
-                        <div className="flex gap-2">
-                            <button
-                                onClick={() => changeLanguage('en')}
-                                className="text-gray-300 hover:text-white transition-colors cursor-pointer"
-                            >
-                                EN
-                            </button>
-
-                            <span>|</span>
-
-                            <button
-                                onClick={() => changeLanguage('pt')}
-                                className="text-gray-300 hover:text-white transition-colors cursor-pointer"
-                            >
-                                BR
-                            </button>
-                        </div>
+                        {/* Botão condicional de troca de idioma */}
+                        <button
+                            onClick={toggleLanguage}
+                            className="text-gray-300 hover:text-white transition-colors cursor-pointer flex items-center gap-1"
+                        >
+                            {i18n.language === 'en' ? (
+                                <>
+                                    PT
+                                </>
+                            ) : (
+                                <>
+                                    EN
+                                </>
+                            )}
+                        </button>
                     </div>
                 </div>
             </div>

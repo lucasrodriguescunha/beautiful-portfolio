@@ -3,6 +3,9 @@
     "about": "About",
     "projects": "Projects",
     "contact": "Contact",
+    "name": "Hi, I'm Lucas",
+    "presentation": "I'm full stack developer who loves crafting clean, scalable web applications. My goal is to build solutions that offer both exceptional performance and a delightful user experience.",
+    "about_me": "About me",
     "passion": "Passionate developer with expertise in building scalable web applications and creating innovate solutions.",
     "frontend": "Frontend",
     "backend": "Backend",
@@ -15,5 +18,7 @@
     "get_in_touch": "Get In Touch",
     "name_placeholder": "Name...",
     "email_placeholder": "example@gmail.com",
-    "message_placeholder": "Your Message..."
+    "message_placeholder": "Your Message...",
+    "view_projects": "View projects",
+    "contact_me": "Contact me"
 }
