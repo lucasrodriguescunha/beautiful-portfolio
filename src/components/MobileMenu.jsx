@@ -1,4 +1,15 @@
+import { useTranslation } from "react-i18next";
+
 export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
+    const { t, i18n } = useTranslation();
+
+    const handleChangeLanguage = (e) => {
+        e.preventDefault();
+        const newLang = i18n.language === 'en' ? 'pt' : 'en';
+        i18n.changeLanguage(newLang);
+        setMenuOpen(false);
+    };
+
     return (
         <div
             className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.8)] z-40 flex flex-col items-center justify-center
@@ -27,7 +38,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                         : "opacity-0 translate-y-5"}
                     `}
             >
-                Home
+                {t('home')}
             </a>
 
             <a
@@ -39,7 +50,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                         : "opacity-0 translate-y-5"}
                     `}
             >
-                About
+                {t('about')}
             </a>
 
             <a
@@ -51,7 +62,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                         : "opacity-0 translate-y-5"}
                     `}
             >
-                Projects
+                {t('projects')}
             </a>
 
             <a
@@ -63,19 +74,19 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                         : "opacity-0 translate-y-5"}
                     `}
             >
-                Contact
+                {t('contact')}
             </a>
 
             <a
                 href="#change-language"
-                onClick={() => setMenuOpen(false)}
+                onClick={handleChangeLanguage}
                 className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
                     ${menuOpen
                         ? "opacity-100 translate-y-0"
                         : "opacity-0 translate-y-5"}
                     `}
             >
-                Change language
+                {i18n.language === 'en' ? 'Change language' : 'Mudar idioma'}
             </a>
         </div>
     );

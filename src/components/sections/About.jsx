@@ -127,7 +127,7 @@ export const About = () => {
                             </div>
 
                             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                                <h3 className="text-xl font-bold mb-4"> Unit Tests </h3>
+                                <h3 className="text-xl font-bold mb-4"> {t('tests')} </h3>
                                 <div className="flex flex-wrap gap-2"
                                 >
                                     {testsSkills.map((tech, key) => (
@@ -141,7 +141,7 @@ export const About = () => {
                             </div>
 
                             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                                <h3 className="text-xl font-bold mb-4"> Messaging </h3>
+                                <h3 className="text-xl font-bold mb-4"> {t('messaging')} </h3>
                                 <div className="flex flex-wrap gap-2"
                                 >
                                     {messagingsSkills.map((tech, key) => (
@@ -158,28 +158,27 @@ export const About = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                         <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-                            <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
+                            <h3 className="text-xl font-bold mb-4"> 🏫 {t('education')} </h3>
                             <ul className="list-disc list-inside text-gray-300 space-y-2">
                                 <li>
-                                    <strong> B.S in Computer Science </strong> - UNIFAGOC
-                                    (2023-2027)
+                                    <strong>{t('undergraduate_course')} </strong>
                                 </li>
                                 <li>
-                                    Relevant Courses: Data Structures, Algorithms and programming techniques, Web Development, Master Clean and Hexagonal Architecture...
+                                    {t('relevant_courses')}
                                 </li>
                             </ul>
                         </div>
 
                         <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-                            <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
+                            <h3 className="text-xl font-bold mb-4"> 💼 {t('work_experience')}  </h3>
                             <div className="space-y-4 text-gray-300">
                                 <div>
                                     <h4 className="font-semibold">
-                                        Full-stack Trainee Developer at PMU
-                                        (2024- Present)
+                                        {t('work_experiences')}
+
                                     </h4>
                                     <p>
-                                        Responsible for front-end development and the creation and integration of REST APIs.
+                                        {t('desc_experiences')}
                                     </p>
                                 </div>
 
