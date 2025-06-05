@@ -22,7 +22,7 @@ export const Contact = () => {
                 import.meta.env.VITE_PUBLIC_KEY
             )
             .then(() => {
-                alert("Message Sent!");
+                alert("Mensagem enviada!");
                 setFormData({ name: "", email: "", message: "" })
             })
             .catch(() => {
