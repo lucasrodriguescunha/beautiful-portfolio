@@ -10,7 +10,7 @@ Sentry.init({
     sendDefaultPii: true,
 });
 
-const container = document.getElementById("root"); // ou "app", depende do seu index.html
+const container = document.getElementById("root");
 const root = createRoot(container);
 
 root.render(
