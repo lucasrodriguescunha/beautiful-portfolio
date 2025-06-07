@@ -115,7 +115,7 @@ export const Projects = () => {
 
                             <div className="flex justify-between items-center">
                                 <a
-                                    href="https://moodflix-steel.vercel.app/"
+                                    href="https://saas-app-tan.vercel.app/"
                                     target="_blank"
                                     className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                                 >
