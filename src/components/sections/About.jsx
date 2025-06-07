@@ -1,20 +1,22 @@
-import { RevealOnScroll } from "../RevealOnScroll";
-import { useTranslation } from "react-i18next";
+import {RevealOnScroll} from "../RevealOnScroll";
+import {useTranslation} from "react-i18next";
 
 export const About = () => {
-    const { t } = useTranslation();
+    const {t} = useTranslation();
 
     const frontendSkills = [
         "HTML",
         "CSS",
-        "SASS",
-        "Bootstrap",
-        "Tailwind CSS",
-        "Prime NG",
-        "Prime React",
         "JavaScript",
         "TypeScript",
-        "React",
+        "SASS",
+        "Prime NG",
+        "Prime React",
+        "Bootstrap",
+        "Tailwind CSS",
+        "Shadcn",
+        "React.js",
+        "Next.js",
         "Angular"
     ];
 
@@ -22,7 +24,7 @@ export const About = () => {
         "Python",
         "Java",
         "Kotlin",
-        "Spring",
+        "Spring Boot",
         "Flyway"
     ];
 

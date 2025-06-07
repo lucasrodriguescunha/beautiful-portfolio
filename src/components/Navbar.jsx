@@ -1,8 +1,8 @@
-import { useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import {useEffect} from "react";
+import {useTranslation} from "react-i18next";
 
-export const Navbar = ({ menuOpen, setMenuOpen }) => {
-    const { t, i18n } = useTranslation();
+export const Navbar = ({menuOpen, setMenuOpen}) => {
+    const {t, i18n} = useTranslation();
 
     const toggleLanguage = () => {
         const newLang = i18n.language === 'en' ? 'pt' : 'en';
@@ -14,7 +14,8 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     }, [menuOpen]);
 
     return (
-        <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
+        <nav
+            className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
             <div className="max-w-5xl mx-auto px-4">
                 <div className="flex justify-between items-center h-16">
                     <a href="#home" className="font-mono text-xl font-bold text-white">

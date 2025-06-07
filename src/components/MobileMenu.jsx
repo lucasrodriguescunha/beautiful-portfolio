@@ -1,7 +1,7 @@
-import { useTranslation } from "react-i18next";
+import {useTranslation} from "react-i18next";
 
-export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
-    const { t, i18n } = useTranslation();
+export const MobileMenu = ({menuOpen, setMenuOpen}) => {
+    const {t, i18n} = useTranslation();
 
     const handleChangeLanguage = (e) => {
         e.preventDefault();
@@ -16,9 +16,9 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                     transition-all duration-300 ease-in-out
 
                     ${menuOpen
-                    ? "h-screen opacity-100 pointer-events-auto"
-                    : "h-0 opacity-0 pointer-events-none"
-                }
+                ? "h-screen opacity-100 pointer-events-auto"
+                : "h-0 opacity-0 pointer-events-none"
+            }
                 `}
         >
             <button
@@ -34,8 +34,8 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                 onClick={() => setMenuOpen(false)}
                 className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
                     ${menuOpen
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-5"}
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-5"}
                     `}
             >
                 {t('home')}
@@ -46,8 +46,8 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                 onClick={() => setMenuOpen(false)}
                 className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
                     ${menuOpen
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-5"}
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-5"}
                     `}
             >
                 {t('about')}
@@ -58,8 +58,8 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                 onClick={() => setMenuOpen(false)}
                 className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
                     ${menuOpen
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-5"}
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-5"}
                     `}
             >
                 {t('projects')}
@@ -70,8 +70,8 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                 onClick={() => setMenuOpen(false)}
                 className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
                     ${menuOpen
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-5"}
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-5"}
                     `}
             >
                 {t('contact')}
@@ -82,8 +82,8 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                 onClick={handleChangeLanguage}
                 className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
                     ${menuOpen
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-5"}
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-5"}
                     `}
             >
                 {i18n.language === 'en' ? 'Change language' : 'Mudar idioma'}
