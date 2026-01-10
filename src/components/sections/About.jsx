@@ -8,7 +8,7 @@ export const About = () => {
         'HTML',
         'CSS',
         'JavaScript',
-        'React.js',
+        'React',
         'TypeScript',
         'Tailwind CSS',
         'Shadcn',
@@ -22,7 +22,7 @@ export const About = () => {
 
     const testsSkills = [
         'Jest',
-        'Jasmine/Karma'
+        'Jasmine'
     ];
 
     return (

@@ -50,7 +50,7 @@ export const Projects = () => {
                                 {t('moodflix_description')}
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {["Vite", "React.js", "TMDB API", "Appwrite", "Vercel"].map((tech, key) => (
+                                {["Vite", "React", "TMDB API", "Appwrite", "Vercel"].map((tech, key) => (
                                     <span key={key} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
                                 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition"
                                     >
@@ -78,7 +78,7 @@ export const Projects = () => {
                                 {t('document_manager_description')}
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {["Kotlin", "Spring", "React.js", "PostgreSQL", "Flyway", "GitLab", "Gradle", "Prime React", "JUnit", "Kotest"].map((tech, key) => (
+                                {["Kotlin", "Spring", "React", "PostgreSQL", "Flyway", "GitLab", "Gradle", "Prime React", "JUnit", "Kotest"].map((tech, key) => (
                                     <span key={key} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
                                 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition"
                                     >
