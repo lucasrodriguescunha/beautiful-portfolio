@@ -4,20 +4,30 @@ import { useTranslation } from 'react-i18next';
 export const About = () => {
     const { t } = useTranslation();
 
+    const programmingLanguages = [
+        'JavaScript',
+        'TypeScript'
+    ];
+
     const frontendSkills = [
         'HTML',
         'CSS',
-        'JavaScript',
         'React',
-        'TypeScript',
         'Tailwind CSS',
         'Shadcn',
     ];
 
-    const sgbdsSkills = [
+    const databasesServersSkills = [
         'PostgreSQL',
         'MySQL',
-        'MongoDB'
+        'MongoDB',
+        'WebSockets'
+    ];
+
+    const platformsOthersSkills = [
+        'AWS',
+        'Firebase',
+        'Git'
     ];
 
     const testsSkills = [
@@ -44,6 +54,20 @@ export const About = () => {
 
                         <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                             <div className='rounded-xl p-6 hover:-translate-y-1 transition-all'>
+                                <h3 className='text-xl font-bold mb-4'> Programming languages </h3>
+                                <div className='flex flex-wrap gap-2'
+                                >
+                                    {programmingLanguages.map((tech, key) => (
+                                        <span key={key} className='bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
+                                        hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition'
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className='rounded-xl p-6 hover:-translate-y-1 transition-all'>
                                 <h3 className='text-xl font-bold mb-4'> Frontend </h3>
                                 <div className='flex flex-wrap gap-2'
                                 >
@@ -58,10 +82,10 @@ export const About = () => {
                             </div>
 
                             <div className='rounded-xl p-6 hover:-translate-y-1 transition-all'>
-                                <h3 className='text-xl font-bold mb-4'> SGBDs </h3>
+                                <h3 className='text-xl font-bold mb-4'> Databases e servers </h3>
                                 <div className='flex flex-wrap gap-2'
                                 >
-                                    {sgbdsSkills.map((tech, key) => (
+                                    {databasesServersSkills.map((tech, key) => (
                                         <span key={key} className='bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
                                         hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition'
                                         >
@@ -72,7 +96,21 @@ export const About = () => {
                             </div>
 
                             <div className='rounded-xl p-6 hover:-translate-y-1 transition-all'>
-                                <h3 className='text-xl font-bold mb-4'> {t('tests')} </h3>
+                                <h3 className='text-xl font-bold mb-4'> Platforms e others </h3>
+                                <div className='flex flex-wrap gap-2'
+                                >
+                                    {platformsOthersSkills.map((tech, key) => (
+                                        <span key={key} className='bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
+                                        hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition'
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className='rounded-xl p-6 hover:-translate-y-1 transition-all'>
+                                <h3 className='text-xl font-bold mb-4'> Test </h3>
                                 <div className='flex flex-wrap gap-2'
                                 >
                                     {testsSkills.map((tech, key) => (
