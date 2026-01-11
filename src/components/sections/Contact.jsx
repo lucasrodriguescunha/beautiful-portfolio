@@ -1,10 +1,16 @@
-import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 import { RevealOnScroll } from '../RevealOnScroll';
+import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
 
 export const Contact = () => {
   const { t } = useTranslation();
+  const [toast, setToast] = useState({
+    show: false,
+    message: '',
+    type: 'success', // success | error
+  });
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -12,29 +18,46 @@ export const Contact = () => {
   });
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    console.log(import.meta.env.VITE_PUBLIC_KEY)
+    e.preventDefault();
 
-    emailjs.
-      sendForm(
+    emailjs
+      .sendForm(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
         e.target,
         import.meta.env.VITE_PUBLIC_KEY
       )
       .then(() => {
-        alert('Mensagem enviada!');
-        setFormData({ name: '', email: '', message: '' })
+        showToast('Mensagem enviada com sucesso!', 'success');
+        setFormData({ name: '', email: '', message: '' });
       })
-      .catch(() => {
-        alert('Oops! Something went wrong. Please try again.')
+      .catch((error) => {
+        console.error('EmailJS error:', error);
+        showToast('Oops! Algo deu errado. Tente novamente.', 'error');
       });
   };
+
+  function showToast(message, type = 'success') {
+    setToast({
+      show: true,
+      message,
+      type,
+    });
+
+    setTimeout(() => {
+      setToast({
+        show: false,
+        message: '',
+        type,
+      });
+    }, 3000);
+  }
 
   return (
     <section
       id='contact'
-      className='min-h-screen flex items-center justify-center py-20'
-    >
+      className='min-h-screen flex items-center justify-center py-20'>
       <RevealOnScroll>
         <div className='px-4 w-80'>
           <h2 className='text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center'>
@@ -89,6 +112,14 @@ export const Contact = () => {
           </form>
         </div>
       </RevealOnScroll>
+      {toast.show && (
+        <div
+          className={`fixed bottom-6 right-6 z-50 px-6 py-4 rounded-lg text-white shadow-lg transition-all
+          ${toast.type === 'success' ? 'bg-green-500' : 'bg-red-500'}`}
+        >
+          {toast.message}
+        </div>
+      )}
     </section>
   );
 }
