@@ -78,7 +78,7 @@ export const Projects = () => {
                 {t('document_manager_description')}
               </p>
               <div className='flex flex-wrap gap-2 mb-4'>
-                {['Kotlin', 'Spring', 'React', 'PostgreSQL', 'Flyway', 'GitLab', 'Gradle', 'Prime React', 'JUnit', 'Kotest'].map((tech, key) => (
+                {['HTML', 'CSS', 'JavaScript', 'React', 'Prime React', 'Kotlin', 'Spring', 'PostgreSQL', 'Flyway', 'GitLab', 'Gradle', 'Kotest'].map((tech, key) => (
                   <span key={key} className='bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
                                 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition'
                   >
@@ -115,7 +115,7 @@ export const Projects = () => {
 
               <div className='flex justify-between items-center'>
                 <a
-                  href='#'
+                  href='https://memory-game-eosin-two.vercel.app/'
                   className='text-blue-400 hover:text-blue-300 transition-colors my-4'
                 >
                   {t('view_project')} &#8594;
