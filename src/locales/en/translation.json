@@ -20,8 +20,6 @@
   "work_experiences": "Full-stack Trainee Developer at PMU (2024- Present)",
   "desc_experiences": "Responsible for front-end development and the creation and integration of REST APIs.",
   "featured_projects": "Featured projects",
-  "clear_email_title": "Clear e-mail",
-  "clear_email_description": "I developed a tool that automates email cleanup, applying customized exclusion rules via the IMAP protocol.",
   "document_manager_title": "Document manager",
   "document_manager_description": "I participated in an extension project for the Computer Science course with the goal of developing document management and control software, aimed at optimizing the processes of the Assets and Materials Administration Division of the Municipality of Ubá.",
   "moodflix_title": "Moodflix",
