@@ -25,7 +25,8 @@ export const Projects = () => {
               </p>
               <div className='flex flex-wrap gap-2 mb-4'>
                 {
-                  ['HTML',
+                  [
+                    'HTML',
                     'CSS',
                     'JavaScript',
                     'React',
