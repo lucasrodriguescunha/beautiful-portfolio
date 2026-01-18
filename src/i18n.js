@@ -13,7 +13,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'pt', // idioma padrão
+    // lng: 'pt', // idioma padrão. Obs:. Agora quem manda é a URL /pt e /en
     fallbackLng: 'pt',
     interpolation: {
       escapeValue: false,

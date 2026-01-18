@@ -1,12 +1,17 @@
+import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
-  const { t, i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
+  const navigate = useNavigate();
+  const { lang } = useParams();
 
   const handleChangeLanguage = (e) => {
     e.preventDefault();
-    const newLang = i18n.language === 'en' ? 'pt' : 'en';
+    const newLang = lang === 'en' ? 'pt' : 'en';
+
     i18n.changeLanguage(newLang);
+    navigate(`/${newLang}`);
     setMenuOpen(false);
   };
 

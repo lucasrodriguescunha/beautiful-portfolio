@@ -1,12 +1,16 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate, useParams } from 'react-router-dom';
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
-  const { t, i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
+  const navigate = useNavigate();
+  const { lang } = useParams();
 
   const toggleLanguage = () => {
-    const newLang = i18n.language === 'en' ? 'pt' : 'en';
+    const newLang = lang === 'en' ? 'pt' : 'en';
     i18n.changeLanguage(newLang);
+    navigate(`/${newLang}`);
   };
 
   useEffect(() => {
