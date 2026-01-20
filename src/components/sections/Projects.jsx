@@ -54,7 +54,7 @@ export const Projects = () => {
                   className='text-blue-400 hover:text-blue-300 transition-colors my-4'
                   disabled={true}
                 >
-                  Este projeto é totalmente privado
+                  Este projeto é totalmente privado.
                 </a>
               </div>
             </div>
@@ -62,10 +62,10 @@ export const Projects = () => {
             <div
               className='p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.1)] transition-all'>
               <h3 className='text-xl font-bold mb-2'>
-                {t('cryptocurrency_tracker')}
+                {t('cryptocurrency_tracker_title')}
               </h3>
               <p className='text-gray-400 mb-4'>
-                {t('cryptocurrency_tracker')}
+                {t('cryptocurrency_tracker_description')}
               </p>
               <div className='flex flex-wrap gap-2 mb-4'>
                 {
@@ -88,7 +88,7 @@ export const Projects = () => {
 
               <div className='flex justify-between items-center'>
                 <a
-                  href='#'
+                  href='https://crypto-project-omega-eosin.vercel.app/'
                   className='text-blue-400 hover:text-blue-300 transition-colors my-4'
                 >
                   {t('view_project')} &#8594;
