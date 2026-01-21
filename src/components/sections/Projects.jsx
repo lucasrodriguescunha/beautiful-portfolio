@@ -62,10 +62,10 @@ export const Projects = () => {
             <div
               className='p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.1)] transition-all'>
               <h3 className='text-xl font-bold mb-2'>
-                {t('cryptocurrency_tracker_title')}
+                {t('crypto_vision_title')}
               </h3>
               <p className='text-gray-400 mb-4'>
-                {t('cryptocurrency_tracker_description')}
+                {t('crypto_vision_description')}
               </p>
               <div className='flex flex-wrap gap-2 mb-4'>
                 {
