@@ -19,8 +19,8 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
 
     showToast(
       newLang === 'pt'
-        ? 'Idioma alterado para Português 🇧🇷'
-        : 'Language changed to English 🇺🇸',
+        ? 'Idioma alterado para Português'
+        : 'Language changed to English',
       'success'
     );
   };
