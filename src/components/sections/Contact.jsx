@@ -18,7 +18,6 @@ export const Contact = () => {
   });
 
   const handleSubmit = (e) => {
-    console.log(import.meta.env.VITE_PUBLIC_KEY)
     e.preventDefault();
 
     emailjs
