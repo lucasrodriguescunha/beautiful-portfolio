@@ -9,7 +9,7 @@ export const getSkills = (t) => [
   },
   {
     title: t('databases_servers'),
-    items: ['PostgreSQL', 'MySQL', 'MongoDB', 'WebSockets'],
+    items: ['PostgreSQL', 'MySQL', 'MongoDB'],
   },
   {
     title: t('tests'),
@@ -17,6 +17,6 @@ export const getSkills = (t) => [
   },
   {
     title: t('platforms_others'),
-    items: ['AWS', 'Firebase', 'Git'],
+    items: ['AWS', 'Git'],
   },
 ];
