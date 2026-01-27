@@ -4,7 +4,7 @@ export const getSkills = (t) => [
     items: ['JavaScript', 'TypeScript'],
   },
   {
-    title: 'Frontend',
+    title: 'Front-end',
     items: ['HTML', 'CSS', 'React.js', 'Next.js', 'Tailwind CSS', 'Shadcn'],
   },
   {
