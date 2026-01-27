@@ -37,7 +37,8 @@ export const Projects = () => {
                     'Flyway',
                     'GitLab',
                     'Gradle',
-                    'Kotest'
+                    'Kotest',
+                    'API\'s REST'
                   ].map((tech, key) => (
                     <span
                       key={key}
@@ -54,7 +55,7 @@ export const Projects = () => {
                   className='text-blue-400 hover:text-blue-300 transition-colors my-4'
                   disabled={true}
                 >
-                  Este projeto é totalmente privado.
+                  Este projeto é privado.
                 </a>
               </div>
             </div>
