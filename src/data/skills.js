@@ -5,7 +5,7 @@ export const getSkills = (t) => [
   },
   {
     title: 'Frontend',
-    items: ['HTML', 'CSS', 'React', 'Tailwind CSS', 'Shadcn'],
+    items: ['HTML', 'CSS', 'React.js', 'Next.js', 'Tailwind CSS', 'Shadcn'],
   },
   {
     title: t('databases_servers'),
